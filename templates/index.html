@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="content">
+<!-- <div class="content">
     <h1 style="text-align: center">Search</h1>
 
     <div class="form">
@@ -16,5 +16,16 @@
             <input type="submit" value="Search">
         </form>
     </div>
+</div> -->
+<div class="input-group">
+ <form action="/review" method="POST"> 
+  <div class="form-outline">
+    <input id="search-focus" type="search" id="form1" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+  </div>
+  <button type="button" class="btn btn-primary">
+    <i class="fas fa-search"></i>
+  </button>
+ </form>
 </div>
 {% endblock %}
